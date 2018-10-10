@@ -37,7 +37,7 @@ function getList(url) {
             oP.innerHTML = data[i].title;
             oDiv.appendChild(oP);
             //将整个oDiv加到HTML的最短li中
-            aLi[_index].appendChild(oDiv);
+            init.aLi[_index].appendChild(oDiv);
         }
 
         init.b = true;
