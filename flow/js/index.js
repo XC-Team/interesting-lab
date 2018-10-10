@@ -1,7 +1,7 @@
 var oUl = document.getElementById('ul1');
 var aLi = oUl.getElementsByTagName('li');
 
-var portUrl = 'http://jomsou.gearhostpreview.com/get_pics.php';
+var portUrl = 'http://jomsou.gearhostpreview.com/flow/get_pics.php';
 var iLen = aLi.length;
 var iPage = 1;
 //用来控制getList的开关
