@@ -1,12 +1,13 @@
-var iPage = 1,
+var b = true,
     init = {
         aLi: document.getElementById('ul1').getElementsByTagName('li'),
         // ali: document.querySelectorAll('#ul1 li'),
         iLen: function () {
             return this.aLi.length;
         },
+        iPage: 1,
         //用来控制getList的开关
-        b: true
+
     };
 
 var portUrl = 'http://jomsou.gearhostpreview.com/flow/get_pics.php';
@@ -15,7 +16,7 @@ getList(portUrl);
 
 function getList(url) {
     //用ajax从后端接口加载数据
-    ajax('get', url, 'cpage' + iPage, function (data) {
+    ajax('get', url, 'cpage' + init.iPage, function (data) {
         var data = JSON.parse(data);
         //数据加载完成
         if (!data.length) {
@@ -52,7 +53,7 @@ window.onscroll = function () {
     if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
         if (init.b) {
             init.b = false;
-            iPage++;
+            init.iPage++;
             getList(portUrl);
         }
     }
