@@ -14,7 +14,7 @@
     /**
      * 公共方法
      */
-    function getList(url) {
+    function getImgList(url) {
         //用ajax从后端接口加载数据
         ajax('get', url, 'cpage' + iPage, function (data) {
             var data = JSON.parse(data);
@@ -77,12 +77,12 @@
             if (b) {
                 b = false;
                 iPage++;
-                getList(portUrl);
+                getImgList(portUrl);
             }
         }
     }
     /**
      * 初始化数据
      */
-    getList(portUrl);
+    getImgList(portUrl);
 })()
