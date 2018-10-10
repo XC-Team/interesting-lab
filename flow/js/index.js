@@ -8,13 +8,13 @@ var init = {
     b: true
 }
 
-var portUrl = 'http://jomsou.gearhostpreview.com/get_pics.php';
+// var portUrl = 'http://jomsou.gearhostpreview.com/get_pics.php';
 //初始化数据
-getList(portUrl);
+getList();
 
-function getList(url) {
+function getList() {
     //用ajax从后端接口加载数据
-    ajax('get', url, 'cpage' + init.iPage, function (data) {
+    ajax('get', 'http://jomsou.gearhostpreview.com/get_pics.php', 'cpage' + init.iPage, function (data) {
         var data = JSON.parse(data);
         //数据加载完成
         if (!data.length) {
@@ -52,7 +52,7 @@ window.onscroll = function () {
         if (init.b) {
             init.b = false;
             init.iPage++;
-            getList(portUrl);
+            getList();
         }
     }
 }
