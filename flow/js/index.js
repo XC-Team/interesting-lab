@@ -10,7 +10,7 @@
 
      function getList() {
          //用ajax从后端接口加载数据
-         ajax('get', 'http://jomsou.gearhostpreview.com/get_pics.php', 'cpage' + iPage, function (data) {
+         ajax('get', 'http://jomsou.gearhostpreview.com/flow/get_pics.php', 'cpage' + iPage, function (data) {
              var data = JSON.parse(data);
              //数据加载完成
              if (!data.length) {
