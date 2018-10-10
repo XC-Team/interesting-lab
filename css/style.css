@@ -71,7 +71,7 @@ a {
     float: left;
 }
 
-.menu ul li:hover {
+.active, .menu ul li:hover {
     background: #e4a342;
 }
 
