@@ -1,22 +1,17 @@
-var init = {
-    aLi: document.getElementById('ul1').getElementsByTagName('li'),
-    // ali: document.querySelectorAll('#ul1 li'),
-    iLen: function(){
-        return this.aLi.length;
-    },
-    iPage: 1,
-    //用来控制getList的开关
-    b: true
-}
-console.log(init.aLi);
-console.log(init.aLi.length);
+var oUl = document.getElementById('ul1');
+var aLi = oUl.getElementsByTagName('li');
+
 var portUrl = 'http://jomsou.gearhostpreview.com/flow/get_pics.php';
+var iLen = aLi.length;
+var iPage = 1;
+//用来控制getList的开关
+var b = true;
 //初始化数据
 getList(portUrl);
 
 function getList(url) {
     //用ajax从后端接口加载数据
-    ajax('get', url, 'cpage' + init.iPage, function (data) {
+    ajax('get', url, 'cpage' + iPage, function (data) {
         var data = JSON.parse(data);
         //数据加载完成
         if (!data.length) {
@@ -40,20 +35,20 @@ function getList(url) {
             oP.innerHTML = data[i].title;
             oDiv.appendChild(oP);
             //将整个oDiv加到HTML的最短li中
-            init.aLi[_index].appendChild(oDiv);
+            aLi[_index].appendChild(oDiv);
         }
 
-        init.b = true;
+        b = true;
     })
 }
 window.onscroll = function () {
     var _index = getShort();
-    var oLi = init.aLi[_index];
+    var oLi = aLi[_index];
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
-        if (init.b) {
-            init.b = false;
-            init.iPage++;
+        if (b) {
+            b = false;
+            iPage++;
             getList(portUrl);
         }
     }
@@ -61,11 +56,11 @@ window.onscroll = function () {
 //获取最短的一列
 function getShort() {
     var index = 0;
-    var ih = init.aLi[index].offsetHeight;
-    for (var i = 1; i < init.iLen; i++) {
-        if (init.aLi[i].offsetHeight < ih) {
+    var ih = aLi[index].offsetHeight;
+    for (var i = 1; i < iLen; i++) {
+        if (aLi[i].offsetHeight < ih) {
             index = i;
-            ih = init.aLi[i].offsetHeight;
+            ih = aLi[i].offsetHeight;
         }
     }
 
