@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    border: none;
+}
+
+/* 链接样式 */
+a {
+    color: #933;
+    text-decoration: none;
+}
+
+/* 页面头部 */
+.header {
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+}
+
+/* 头部左边logo部分 */
+.logo img {
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+/* 头部右边菜单部分 */
+.menu {
+    float: right;
+    width: 30%;
+    overflow: hidden;
+}
+
+.menu ul {
+    margin-right: 50px;
+    height: 100px;
+}
+
+.menu ul li {
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-align: center;
+    width: 25%;
+    line-height: 100px;
+    font-weight: bold;
+    list-style-type: none;
+    float: left;
+}
+
+.menu ul li:hover {
+    background: #e4a342;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.coursecontent .lessonlist {
+    padding: 60px 0px 60px 0px;
+    width: 780px;
+    float: right;
+    border-left: 5px solid #e4e4e4;
+}
+
+.coursecontent .lessonlist .learn-lessonlist {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.coursecontent .lessonlist .learn-lessonlist .stageicon {
+    position: absolute;
+    z-index: 30;
+    left: -17px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 5px solid #e4e4e4;
+    background: #f1f1f1;
+}
+
+.coursecontent .lessonlist .learn-lessonlist .stagewaring-box {
+    width: 160px;
+    height: 80px;
+    padding: 10px;
+    position: absolute;
+    left: -230px;
+    top: 0;
+    background: #fff;
+}
+
+.coursecontent .lessonlist .learn-lessonlist .stagewaring-box .jiantou-right {
+    position: absolute;
+    top: 0px;
+    right: -26px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px 13px;
+    border-style: solid;
+    border-color: #fff #f1f1f1 #f1f1f1 #fff;
+}
+
+.coursecontent .lessonlist .learn-lessonlist .stagewaring-box .textcontent {
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.coursecontent .lessonlist .textcontent h3 {
+    font-size: 18px;
+    color: #101213;
+    line-height: 30px;
+}
+
+.coursecontent .lessonlist .textcontent p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #707171;
+}
+
+.coursecontent .lessonlist .lessonimgbox {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.lessonimgbox {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.lessonimgbox .img-box {
+    overflow: hidden;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 5px;
+}
+
+.lessonimgbox .img-box img {
+    display: block;
+    width: 100%;
+    height: 130px;
+}
+
+.lessonimgbox h3 {
+    height: 48px;
+    padding: 0 10px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.lessonimgbox a h3,
+.lessonimgbox a:hover h3,
+.lessonimgbox a:visited h3 {
+    color: #273346;
+}
+
+.lessonimgbox .imgboxfoot {
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #a9a9a9;
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 210px;
+    clear: both;
+    left: 0;
+    z-index: 50;
+}
+
+.lessonimgbox .imgboxfoot .minandtime {
+    float: right;
+}
+
+.lessonimgbox .img-pop {
+    width: 230px;
+    height: 210px;
+    padding: 10px 0;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    z-index: 40;
+    background: #fff;
+}
+
+.lessonimgbox .img-pop blockquote p {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 85px;
+    overflow: hidden;
+    color: #8d8d8d;
+}
+
+.lessonimgbox .img-pop .time-user-number {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8d8d8d;
+}
+
+.lessonimgbox .img-pop .time-user-number span:nth-child(2) {
+    float: right;
+}
+
+/* 页面底部 */
+.footer {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    background: #292c35;
+    text-align: center;
+    line-height: 100px;
+}

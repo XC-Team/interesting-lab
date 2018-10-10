@@ -84,5 +84,5 @@
     /**
      * 初始化数据
      */
-    getImgList(portUrl);
+    getList(portUrl);
 })()
