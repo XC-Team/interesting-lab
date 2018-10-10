@@ -6,4 +6,7 @@
 - [照片墙](http://jomsou.gearhostpreview.com/transform/)
 - [响应式](http://jomsou.gearhostpreview.com/responsive/)
 
-## 
+## TODO
+- [ ] 相册（相册集,写php接口，数据库)
+- [ ] 玩呢（以前跟现在的玩）
+- [ ] Interesting Lab（写php接口，数据库)
