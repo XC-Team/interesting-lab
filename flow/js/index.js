@@ -1,5 +1,8 @@
 ;
 (function () {
+    /**
+     * 初始化变量
+     */
     var oUl = document.getElementById('ul1');
     var aLi = oUl.getElementsByTagName('li');
 
@@ -8,9 +11,9 @@
     var iPage = 1;
     //用来控制getList的开关
     var b = true;
-    //初始化数据
-    getList(portUrl);
-
+    /**
+     * 公共方法
+     */
     function getList(url) {
         //用ajax从后端接口加载数据
         ajax('get', url, 'cpage' + iPage, function (data) {
@@ -43,18 +46,6 @@
             b = true;
         })
     }
-    window.onscroll = function () {
-        var _index = getShort();
-        var oLi = aLi[_index];
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
-            if (b) {
-                b = false;
-                iPage++;
-                getList(portUrl);
-            }
-        }
-    }
     //获取最短的一列
     function getShort() {
         var index = 0;
@@ -78,4 +69,20 @@
 
         return iTop;
     }
+    window.onscroll = function () {
+        var _index = getShort();
+        var oLi = aLi[_index];
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
+            if (b) {
+                b = false;
+                iPage++;
+                getList(portUrl);
+            }
+        }
+    }
+    /**
+     * 初始化数据
+     */
+    getList(portUrl);
 })()
