@@ -47,7 +47,7 @@ function getList(url) {
 window.onscroll = function () {
     var _index = getShort();
     var oLi = init.aLi[_index];
-    var scrollTop = document.documentElement.scrollTop || document.init.body.scrollTop;
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
         if (init.b) {
             init.b = false;
