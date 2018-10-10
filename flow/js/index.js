@@ -43,7 +43,7 @@ function getList(url) {
             init.aLi[_index].appendChild(oDiv);
         }
 
-        init.b = true;
+        b = true;
     })
 }
 window.onscroll = function () {
@@ -51,8 +51,8 @@ window.onscroll = function () {
     var oLi = init.aLi[_index];
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
-        if (init.b) {
-            init.b = false;
+        if (b) {
+            b = false;
             init.iPage++;
             getList(portUrl);
         }
