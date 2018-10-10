@@ -1,6 +1,6 @@
 var init = {
     aLi: document.querySelectorAll('ul li'),
-    iLen: this.aLi.length,
+    iLen: init.aLi.length,
     iPage: 1,
     //用来控制getList的开关
     b: true
