@@ -12,7 +12,7 @@ getList(portUrl);
 
 function getList(url) {
     //用ajax从后端接口加载数据
-    ajax('get', url, 'cpage' + iPage, function (data) {
+    ajax('get', url, 'cpage' + init.iPage, function (data) {
         var data = JSON.parse(data);
         //数据加载完成
         if (!data.length) {
@@ -36,20 +36,20 @@ function getList(url) {
             oP.innerHTML = data[i].title;
             oDiv.appendChild(oP);
             //将整个oDiv加到HTML的最短li中
-            aLi[_index].appendChild(oDiv);
+            init.aLi[_index].appendChild(oDiv);
         }
 
-        b = true;
+        init.b = true;
     })
 }
 window.onscroll = function () {
     var _index = getShort();
-    var oLi = aLi[_index];
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var oLi = init.aLi[_index];
+    var scrollTop = document.documentElement.scrollTop || document.init.body.scrollTop;
     if (getTop(oLi) + oLi.offsetHeight < document.documentElement.clientHeight + scrollTop) {
-        if (b) {
-            b = false;
-            iPage++;
+        if (init.b) {
+            init.b = false;
+            init.iPage++;
             getList(portUrl);
         }
     }
@@ -57,11 +57,11 @@ window.onscroll = function () {
 //获取最短的一列
 function getShort() {
     var index = 0;
-    var ih = aLi[index].offsetHeight;
-    for (var i = 1; i < iLen; i++) {
-        if (aLi[i].offsetHeight < ih) {
+    var ih = init.aLi[index].offsetHeight;
+    for (var i = 1; i < init.iLen; i++) {
+        if (init.aLi[i].offsetHeight < ih) {
             index = i;
-            ih = aLi[i].offsetHeight;
+            ih = init.aLi[i].offsetHeight;
         }
     }
 
