@@ -71,10 +71,6 @@ a {
     float: left;
 }
 
-.active, .menu ul li:hover {
-    background: #e4a342;
-}
-
 .cf:after {
     content: '';
     display: block;
