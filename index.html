@@ -4,29 +4,30 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Interesting Lab | 做有趣的事呀！</title>
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/common.js"></script>
+    <link type="text/css" href="css/makesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
 </head>
 
 <body>
     <div class="header">
-        <!--头部左边logo部分-->
-        <div class="logo">
-            <img src="./images/logo.png" alt="logo">
-        </div>
-        <!--头部右边菜单部分-->
-        <div class="menu" id="top">
-            <ul>
-                <li style="background: #e4a342;"><a href="https://www.jomsou.cn/interesting-lab/">搞事</a></li>
-                <li><a href="https://www.jomsou.cn">博客</a></li>
-                <li><a href="#">相册</a></li>
-                <li><a href="#">玩呢</a></li>
-            </ul>
+        <div class="content-width clearfix">
+            <!--头部左边logo部分-->
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <!--头部右边菜单部分-->
+            <div class="menu clearfix" id="top">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li style="background: #e4a342;"><a href="./html">搞事</a></li>
+                    <li><a href="https://www.jomsou.cn">博客</a></li>
+                    <li><a href="./album.html">相册</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="coursecontent w-1000">
+
+    <div class="coursecontent content-width w-1000 clearfix">
         <div class="lessonlist">
             <div class="learn-lessonlist cf">
                 <span class="stageicon"></span>
@@ -253,55 +254,13 @@
                         <p>学习中写的项目或者有趣的效果</p>
                     </div>
                 </div>
-                <div class="lessonimgbox">
-                    <a href="http://www.github.com/Zenquan/todoList/">
-                        <div class="img-box">
-                            <img src="./images/todoList.png">
-                        </div>
-                        <h3>todoList: 我的todo应用</h3>
-
-                        <div class="imgboxfoot">
-                            <span class="minandtime">2018.08</span>
-                        </div>
-
-                        <div class="img-pop">
-                            <blockquote>
-                                <p>
-                                    用Vue+Vue-router+Vuex+SSR写的todolist
-                                </p>
-                            </blockquote>
-                        </div>
-
-                    </a>
-                </div>
-                <div class="lessonimgbox">
-                    <a href="https://github.com/Zenquan/node-blog">
-                        <div class="img-box">
-                            <img src="./images/node-blog.png">
-                        </div>
-                        <h3>
-                            <node-blog: 博客系统/h3> <div class="imgboxfoot">
-                                <span class="minandtime">2018.03(2018.10开始重构)</span>
-                </div>
-
-                <div class="img-pop">
-                    <blockquote>
-                        <p>
-                            这是学习了node一段时间后写的一个demo，主要用于理解前后端数
-                            据交互。知识点:1.<strong>jQuery</strong>+<strong>zepto</strong>+<strong>node</strong>+<strong>Express</strong>
-                            2.移动端布局(rem单位的使用)。技术栈:<strong>jQuery</strong>+<strong>zepto</strong>+<strong>node</strong>+<strong>Express</strong>
-                        </p>
-                    </blockquote>
-                </div>
-
-                </a>
             </div>
             <div class="lessonimgbox">
-                <a href="http://www.github.com/Zenquan//reactAdmin/">
+                <a href="http://www.github.com/Zenquan/todoList/">
                     <div class="img-box">
-                        <img src="./images/reactAdmin.png">
+                        <img src="./images/todoList.png">
                     </div>
-                    <h3>reactAdmin: 后台管理系统</h3>
+                    <h3>todoList: 我的todo应用</h3>
 
                     <div class="imgboxfoot">
                         <span class="minandtime">2018.08</span>
@@ -310,7 +269,7 @@
                     <div class="img-pop">
                         <blockquote>
                             <p>
-                                React 16+React-Router4 从零打造企业级电商后台管理系统
+                                用Vue+Vue-router+Vuex+SSR写的todolist
                             </p>
                         </blockquote>
                     </div>
@@ -318,182 +277,227 @@
                 </a>
             </div>
             <div class="lessonimgbox">
-                <a href="https://github.com/Zenquan/vuewaimai">
+                <a href="https://github.com/Zenquan/node-blog">
                     <div class="img-box">
-                        <img src="./images/vuewaimai.png">
+                        <img src="./images/node-blog.png">
                     </div>
-                    <h3> vuewaiwai: 外卖应用</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">2018.08-2018.09</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                这是一个<strong>前后端分离</strong>的项目，主要是为了将<strong>vue全家桶</strong>、<strong>一些好的插件</strong>和<strong>后端node</strong>等技术栈经过选型结合起来使用。<strong>前端技术栈：
-                                    <br> vue+vuex+vue-router+better-scroll+swiper+mock+ES6+webpack
-                                    后端技术栈： node+express+MongoDB</strong>。通过阅读<strong>webpack</strong>官方文档，对整个项目的从零搭建，掌握了前端自动化工作流。还用了<strong>eslint</strong>作为代码规范。
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://www.github.com/Zenquan/Jomsou-site/">
-                    <div class="img-box">
-                        <img src="./images/jomsou-site.png">
-                    </div>
-                    <h3>Jomsou-site: 我的静态空间站点。</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">2017.09(2018.10开始重构)</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                从界面设计到前端开发 利用HTML5、CSS3、Sass等各种技术来丰富展示的响应式单页,刚学前端的练手站点。一直也在根据自己的技术学习更新迭代。
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://jomsou.gearhostpreview.com/flow/">
-                    <div class="img-box">
-                        <img src="./images/flow.png">
-                    </div>
-                    <h3>图片瀑布流布局</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">2018.02</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                封装一个ajax库写个瀑布流布局，自己写的简单后端接口。
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://zendown.gearhostpreview.com/">
-                    <div class="img-box">
-                        <img src="./images/zendowm.png">
-                    </div>
-                    <h3>zendowm：My personal markdowm and rich text note app</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">计划中</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                我的私人markdowm及富文本笔记应用，手机端（移动页面+Android）+pc端（ELlectron）
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://zenmark.gearhostpreview.com/">
-                    <div class="img-box">
-                        <img src="./images/zenmark.png">
-                    </div>
-                    <h3>zenmark: My personal bookmark</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">计划中</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                我的私人书签（跨平台同步）
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://text2logo.gearhostpreview.com/">
-                    <div class="img-box">
-                        <img src="./images/text2logo.png">
-                    </div>
-                    <h3>text2logo: A app tramform text to logo</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">计划中</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                text简单转化为logo的应用
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
-            </div>
-            <div class="lessonimgbox">
-                <a href="http://jomsou.gearhostpreview.com/transform/">
-                    <div class="img-box">
-                        <img src="./images/picwall.png">
-                    </div>
-                    <h3>css3照片墙</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">2018.02</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                效果不错的照片墙
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
+                    <h3>
+                        <node-blog: 博客系统/h3> <div class="imgboxfoot">
+                            <span class="minandtime">2018.03(2018.10开始重构)</span>
             </div>
 
-            <div class="lessonimgbox">
-                <a href="http://jomsou.gearhostpreview.com/responsive/">
-                    <div class="img-box">
-                        <img src="./images/responsive.png">
-                    </div>
-                    <h3>响应式布局</h3>
-
-                    <div class="imgboxfoot">
-                        <span class="minandtime">2018.02</span>
-                    </div>
-
-                    <div class="img-pop">
-                        <blockquote>
-                            <p>
-                                之前学了简单响应式页面，重写了一次这个简单的响应式页面，以表示理解。
-                            </p>
-                        </blockquote>
-                    </div>
-
-                </a>
+            <div class="img-pop">
+                <blockquote>
+                    <p>
+                        这是学习了node一段时间后写的一个demo，主要用于理解前后端数
+                        据交互。知识点:1.<strong>jQuery</strong>+<strong>zepto</strong>+<strong>node</strong>+<strong>Express</strong>
+                        2.移动端布局(rem单位的使用)。技术栈:<strong>jQuery</strong>+<strong>zepto</strong>+<strong>node</strong>+<strong>Express</strong>
+                    </p>
+                </blockquote>
             </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://www.github.com/Zenquan//reactAdmin/">
+                <div class="img-box">
+                    <img src="./images/reactAdmin.png">
+                </div>
+                <h3>reactAdmin: 后台管理系统</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2018.08</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            React 16+React-Router4 从零打造企业级电商后台管理系统
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="https://github.com/Zenquan/vuewaimai">
+                <div class="img-box">
+                    <img src="./images/vuewaimai.png">
+                </div>
+                <h3> vuewaiwai: 外卖应用</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2018.08-2018.09</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            这是一个<strong>前后端分离</strong>的项目，主要是为了将<strong>vue全家桶</strong>、<strong>一些好的插件</strong>和<strong>后端node</strong>等技术栈经过选型结合起来使用。<strong>前端技术栈：
+                                <br> vue+vuex+vue-router+better-scroll+swiper+mock+ES6+webpack
+                                后端技术栈： node+express+MongoDB</strong>。通过阅读<strong>webpack</strong>官方文档，对整个项目的从零搭建，掌握了前端自动化工作流。还用了<strong>eslint</strong>作为代码规范。
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://www.github.com/Zenquan/Jomsou-site/">
+                <div class="img-box">
+                    <img src="./images/jomsou-site.png">
+                </div>
+                <h3>Jomsou-site: 我的静态空间站点。</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2017.09(2018.10开始重构)</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            从界面设计到前端开发 利用HTML5、CSS3、Sass等各种技术来丰富展示的响应式单页,刚学前端的练手站点。一直也在根据自己的技术学习更新迭代。
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://jomsou.gearhostpreview.com/flow/">
+                <div class="img-box">
+                    <img src="./images/flow.png">
+                </div>
+                <h3>图片瀑布流布局</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2018.02</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            封装一个ajax库写个瀑布流布局，自己写的简单后端接口。
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://zendown.gearhostpreview.com/">
+                <div class="img-box">
+                    <img src="./images/zendowm.png">
+                </div>
+                <h3>zendowm：My personal markdowm and rich text note app</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">计划中</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            我的私人markdowm及富文本笔记应用，手机端（移动页面+Android）+pc端（ELlectron）
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://zenmark.gearhostpreview.com/">
+                <div class="img-box">
+                    <img src="./images/zenmark.png">
+                </div>
+                <h3>zenmark: My personal bookmark</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">计划中</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            我的私人书签（跨平台同步）
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://text2logo.gearhostpreview.com/">
+                <div class="img-box">
+                    <img src="./images/text2logo.png">
+                </div>
+                <h3>text2logo: A app tramform text to logo</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">计划中</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            text简单转化为logo的应用
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
+        <div class="lessonimgbox">
+            <a href="http://jomsou.gearhostpreview.com/transform/">
+                <div class="img-box">
+                    <img src="./images/picwall.png">
+                </div>
+                <h3>css3照片墙</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2018.02</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            效果不错的照片墙
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
         </div>
 
+        <div class="lessonimgbox">
+            <a href="http://jomsou.gearhostpreview.com/responsive/">
+                <div class="img-box">
+                    <img src="./images/responsive.png">
+                </div>
+                <h3>响应式布局</h3>
+
+                <div class="imgboxfoot">
+                    <span class="minandtime">2018.02</span>
+                </div>
+
+                <div class="img-pop">
+                    <blockquote>
+                        <p>
+                            之前学了简单响应式页面，重写了一次这个简单的响应式页面，以表示理解。
+                        </p>
+                    </blockquote>
+                </div>
+
+            </a>
+        </div>
     </div>
+
     </div>
     <!--页面底部-->
     <div class="footer">© 2017-2018 by Zenquan</div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
