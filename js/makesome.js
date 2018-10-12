@@ -14,7 +14,6 @@ var jkcommon ={
     lessImgShow:function(){
         $('.lessonimgbox').bind("mouseover",function(e){
             var _pop = $(this).find('.img-pop');
-            $(this).css({border:"2px solid #1abc9c",width:"226px" ,height:"226px"});
             TweenMax.to(_pop,0.5,{top:0,ease:Bounce.easeOut});
             jkcommon.stopEventBubble(e);
         });

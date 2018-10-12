@@ -36,7 +36,7 @@ a {
 
 .coursecontent .lessonlist {
     padding: 60px 0px 60px 0px;
-    width: 785px;
+    width: 78%;
     float: right;
     border-left: 5px solid #e4e4e4;
 }
@@ -111,6 +111,7 @@ a {
     background: #fff;
     position: relative;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .lessonimgbox .img-box {

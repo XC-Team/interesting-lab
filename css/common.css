@@ -17,6 +17,7 @@ body {
     color: #333;
     /* 设置页面最小高度，去除x方向滑动条 */
     min-height: 1000px;
+    min-width: 450px;
     overflow-x: hidden;
 }
 
@@ -61,8 +62,8 @@ a {
     background-color: #fff;
     position: relative;
 }
-.content-width {
-    width: 80%;
+.w-1000 {
+    width: 90%;
     margin: 0 auto;
 }
 .logo {
@@ -91,7 +92,7 @@ a {
 }
 
 .menu ul li {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "微软雅黑";
     text-align: center;
     width: 25%;
