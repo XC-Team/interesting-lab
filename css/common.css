@@ -83,6 +83,7 @@ a {
 /* 头部右边菜单部分 */
 .menu {
     float: right;
+    margin-right: 10%;
     width: 30%;
     overflow: hidden;
 }
